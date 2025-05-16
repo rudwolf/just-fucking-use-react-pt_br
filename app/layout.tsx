@@ -98,7 +98,7 @@ export default function RootLayout({
         className={`${geistSans.variable} ${ptSerif.variable} antialiased bg-background`}
       >
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
-          <div className="fixed top-4 right-4 flex gap-2">
+          <div className="fixed top-4 right-4 flex gap-2 z-50">
             <Button size="icon" asChild>
               <a
                 href="https://github.com/burakcan/just-fucking-use-react"

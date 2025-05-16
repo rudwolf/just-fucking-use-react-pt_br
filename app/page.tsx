@@ -448,6 +448,7 @@ export default function Home() {
           >
             GitHub
           </a>{" "}
+          /
           <a
             href="https://x.com/obsfx"
             target="_blank"
@@ -478,6 +479,7 @@ export default function Home() {
           >
             GitHub
           </a>{" "}
+          /
           <a
             href="https://x.com/neoberg"
             target="_blank"

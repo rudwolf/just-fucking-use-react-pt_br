@@ -1,10 +1,11 @@
 import type { Metadata } from "next";
 import { Geist, PT_Serif } from "next/font/google";
-import "./globals.css";
+import { GoogleAnalytics } from "@next/third-parties/google";
 import { ThemeProvider } from "@/components/ThemeProvider";
 import { Button } from "@/components/ui/button";
 import { GithubIcon } from "lucide-react";
 import { ThemeToggle } from "@/components/ThemeToggle";
+import "./globals.css";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -49,6 +50,7 @@ export default function RootLayout({
           {children}
         </ThemeProvider>
       </body>
+      <GoogleAnalytics gaId="G-PQDS8VZD38" />
     </html>
   );
 }

@@ -82,7 +82,6 @@ export const metadata: Metadata = {
       "max-snippet": -1,
     },
   },
-  manifest: siteUrl + "/site.webmanifest",
   alternates: {
     canonical: siteUrl,
   },

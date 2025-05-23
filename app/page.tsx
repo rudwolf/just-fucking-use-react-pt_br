@@ -5,7 +5,7 @@ export default function Home() {
     <main className="prose dark:prose-invert prose-lg mx-auto max-w-[80ch] py-16 px-4">
       <h1>
         USE REACT, MEU AMIGO <br />
-        <small className="text-xs font-bold font-sans">
+        <small className="text-sm font-bold font-sans">
           (OU QUALQUER FRAMEWORK MODERNO, ESPECIALMENTE PARA PROJETOS COMPLEXOS)
         </small>
       </h1>
@@ -52,7 +52,7 @@ export default function Home() {
         </li>
         <li>
           <a href="#bloat">
-            Mas e o "bloat"? O excesso de JavaScript? Meus usuários estão no dial-up!
+            Mas e o &quot;bloat&quot;? O excesso de JavaScript? Meus usuários estão no dial-up!
           </a>
         </li>
         <li>
@@ -70,186 +70,190 @@ export default function Home() {
         </li>
       </ul>
       <p id="start">
-        Adaptado livremente do artigo de Kent C. Dodds, “Just Use React”, para o contexto dos desenvolvedores de front end do Brasil, com uma linguagem mais próxima do nosso dia a dia. Que por sua vez foi adaptado também do artigo no site justf***ingusereact.com. O original usa linguagem forte para dar ênfase ao humor (e palavrões), porém Kent C. Dodds o refez para uma versão mais amigável. Esse é realmente o ponto principal.
+        Fala, dev! Tô aqui pra te contar uma história. Esse texto é uma adaptação do artigo do Kent C. Dodds, &quot;Just Use React&quot;, que por sua vez foi inspirado no site justf***ingusereact.com. O original era bem mais... digamos... colorido, mas o Kent fez uma versão mais amigável. E é isso que a gente quer aqui também!
       </p>
       <p>
-        Dito isso, há pontos interessantes na postagem, portanto, esta versão visa a transmitir a mensagem principal sem palavrões ou linguagem grosseira. Basicamente, apenas entreguei o original à IA e pedi que o tornasse mais agradável. Estou publicando-a aqui em parte como uma piada e também porque ler palavrões me dói a cabeça.
+        Sei que você já deve ter visto um monte de gente falando &quot;ah, usa HTML puro&quot;, &quot;mantém simples&quot;, ou &quot;minha página do GeoCities de 98 carrega mais rápido que seu SPA&quot;. E sabe o que? Eles não estão totalmente errados! Tem hora que o simples é realmente o melhor caminho.
       </p>
       <p>
-        Entendo sua preocupação. Você provavelmente já viu discussões defendendo "HTML puro", "mantenha simples", ou comentários como "Minha página do GeoCities de 98 ainda carrega mais rápido que seu SPA". São pontos válidos em muitos contextos, e o desejo por simplicidade é louvável.
-      </p>
-      <p>
-        É um sentimento bonito, como desejar sistemas econômicos mais simples. No entanto, a web hoje frequentemente hospeda mais do que apenas páginas informativas estáticas. É uma plataforma para aplicações dinâmicas, espaços de trabalho colaborativos e experiências interativas ricas. Estes geralmente exigem um conjunto diferente de ferramentas e abordagens do que um "botão muito bonito" em uma página estática.
+        É tipo querer uma economia mais simples - parece bonito na teoria. Mas a web de hoje não é mais só um monte de páginas estáticas. É uma plataforma pra aplicações dinâmicas, espaços de trabalho colaborativos e experiências interativas. E pra isso, às vezes a gente precisa de ferramentas mais robustas que um simples botão bonito em HTML.
       </p>
       <h2 id="wtf">ENTÃO, QUAL É A IDEIA AQUI?</h2>
       <p>
-        A ideia é reconhecer que às vezes, a complexidade em um projeto não é uma escolha arbitrária, mas um requisito genuíno das funcionalidades sendo construídas. Quando esses requisitos complexos surgem, tentar gerenciar tudo com manipulação direta do DOM e arquivos JavaScript independentes pode se tornar como construir uma máquina sofisticada apenas com as ferramentas manuais mais básicas. Você pode até conseguir, mas o processo pode ser desafiador e o resultado mais difícil de manter ou escalar.
+        A ideia é simples: às vezes a complexidade não é uma escolha, é uma necessidade. Tentar fazer tudo com JavaScript puro e manipulação direta do DOM é tipo tentar construir um carro só com um martelo e uma chave de fenda. Até dá pra fazer, mas vai ser um pouco complicado!
       </p>
       <p>
-        Este é um convite para considerar as poderosas ferramentas desenvolvidas por muitos engenheiros talentosos. Estas ferramentas são projetadas para lidar com complexidades comuns, permitindo que equipes de desenvolvimento se concentrem na lógica única da aplicação e na experiência do usuário, em vez de resolver repetidamente problemas fundamentais.
+        A gente tá aqui pra te mostrar as ferramentas que outros devs já criaram pra resolver problemas comuns. Assim você pode focar no que realmente importa: a lógica da sua aplicação e a experiência do usuário, em vez de ficar reinventando a roda.
       </p>
       <h2 id="why">
-        POR QUE CONSIDERAR MUDAR DE "HTML PURO" PARA FRAMEWORKS JAVASCRIPT?
+        POR QUE USAR FRAMEWORKS JAVASCRIPT EM VEZ DE HTML PURO?
       </h2>
       <p>
-        Porque frequentemente, o objetivo é construir mais do que um documento estático. Você está procurando criar algo interativo, dinâmico e amigável ao usuário - uma aplicação que oferece uma experiência rica, não apenas um panfleto digital.
+        Porque você provavelmente não tá fazendo só uma página estática. Você tá construindo algo interativo, dinâmico e que precisa funcionar bem - uma aplicação de verdade, não só um panfleto digital.
       </p>
       <p>
-        Aqui está por que usar React (ou Vue, Svelte, Angular, ou um framework moderno similar) pode ser benéfico, especialmente à medida que a complexidade do projeto cresce:
+        Vou te mostrar por que React (ou Vue, Svelte, Angular, ou qualquer outro framework moderno) pode te ajudar, especialmente quando seu projeto começa a crescer:
       </p>
 
       <h3>
-        A INTERATIVIDADE NATIVA DO HTML É UM ÓTIMO PONTO DE PARTIDA, MAS PODE NÃO SER SUFICIENTE PARA APLICAÇÕES RICAS
+        HTML É LEGAL, MAS TEM LIMITES
       </h3>
       <p>
-        "Mas HTML tem <code>&lt;details&gt;</code>, <code>&lt;dialog&gt;</code> e formulários!" Absolutamente, e estes são fantásticos para muitos casos de uso. São blocos de construção essenciais. No entanto, eles são sempre suficientes para um editor colaborativo em tempo real, um painel de trading dinâmico, ou uma ferramenta de gerenciamento de projetos de nível empresarial?
+        &quot;Ah, mas HTML tem <code>&lt;details&gt;</code>, <code>&lt;dialog&gt;</code> e formulários!&quot; Sim, e são ótimos! Mas você já tentou fazer um editor colaborativo em tempo real ou um painel de trading só com isso? Vai ser um porre né?!
       </p>
       <p>
-        Ao construir tais aplicações, os elementos interativos nativos do HTML, mesmo com JavaScript vanilla, podem exigir uma quantidade significativa de código personalizado para orquestrar fluxos de trabalho complexos e gerenciar estado. O que o HTML fornece são os elementos fundamentais; frameworks frequentemente fornecem a estrutura e maquinaria para construir sistemas mais elaborados sobre esses fundamentos.
+        O HTML te dá os tijolos básicos, mas frameworks te dão a estrutura toda pronta pra você construir algo mais complexo em cima.
       </p>
-      <h3 id="state-management">GERENCIAMENTO EFETIVO DE ESTADO É FUNDAMENTAL</h3>
+      <h3 id="state-management">GERENCIAR ESTADO É UM PARTE DA VIDA</h3>
       <p>
-        Gerenciar o estado de um simples botão "curtir" alternando uma classe é direto. Mas considere um painel com múltiplos filtros, dados em tempo real de várias fontes, preferências específicas do usuário, e talvez até recursos de edição colaborativa. Uma abordagem JavaScript "simples" aqui pode rapidamente levar a uma teia emaranhada de lógica interconectada que é difícil de debugar e manter. Frameworks oferecem maneiras estruturadas e frequentemente mais intuitivas de gerenciar este tipo de estado de aplicação. Sem eles, desenvolvedores podem se encontrar navegando por um caminho complicado, esperando evitar conflitos de variáveis globais ou bugs difíceis de rastrear.
+        Fazer um botão de &quot;curtir&quot; alternar uma classe é fácil. Agora imagina um painel com vários filtros, dados em tempo real de várias fontes, preferências do usuário e talvez até edição colaborativa. Com JavaScript puro, isso vira uma bagunça que nem você mesmo vai entender depois.
+      </p>
+      <p>
+        Frameworks te dão jeitos mais organizados de lidar com isso. Sem eles, você vai acabar com variáveis globais espalhadas por todo lado, um código macarrônico e bugs que ninguém sabe de onde vêm.
       </p>
       <StateManagementDemo />
-      <h3 id="components">COMPONENTES: CONSTRUA UMA VEZ, USE EM TODO LUGAR</h3>
+      <h3 id="components">COMPONENTES: FAZ UMA VEZ, USA EM TODO LUGAR</h3>
       <p>
-        Lembra das vezes que você pode ter copiado e colado HTML para uma barra de navegação em muitas páginas, apenas para atualizar cada instância quando um novo link era necessário? É uma abordagem inicial comum, e compreensível na época.
+        Lembra daquela vez que você copiou e colou aquele HTML da barra de navegação em várias páginas? E aí quando precisou adicionar um link novo, teve que atualizar em cada lugar? Que saco, né?
       </p>
       <p>
-        Frameworks como React encorajam (ou forçam) pensar em termos de componentes reutilizáveis e encapsulados. Um botão, um campo de formulário, ou um cartão de perfil de usuário inteiro pode ser construído uma vez - sua estrutura, estilo e lógica definidos em um lugar - e então reutilizado onde for necessário. Uma mudança na definição do componente o atualiza em todos os lugares. Isso não é apenas sobre conveniência; é sobre manutenibilidade, consistência e sanidade, especialmente à medida que as aplicações crescem ou são trabalhadas por equipes.
+        Com frameworks como React, você faz um componente uma vez - com toda a estrutura, estilo e lógica dele - e depois é só usar onde precisar. Se precisar mudar algo, muda em um lugar só e pronto! Não é só uma questão de preguiça (que também é válida), é sobre manter o código organizado e consistente, especialmente quando você trabalha em equipe.
       </p>
       <h3 id="ui">
-        ATUALIZAÇÕES DE UI MAIS INTELIGENTES E EFICIENTES
+        ATUALIZAÇÕES DE INTERFACE MAIS ESPERTAS
       </h3>
       <p>
-        Atualizar manualmente muitas partes de uma página quando um único pedaço de dados muda pode ser propenso a erros. Você pode se encontrar meticulosamente dizendo a cada <code>&lt;span&gt;</code> e <code>&lt;div&gt;</code> para atualizar, esperando não perder nada ou causar re-renderizações ineficientes de toda a página.
+        Já tentou atualizar várias partes da página quando um dado muda? É tipo ter que dizer pra cada <code>&lt;span&gt;</code> e <code>&lt;div&gt;</code> o que fazer, e torcer pra não esquecer nenhum ou fazer a página inteira recarregar sem necessidade.
       </p>
       <p>
-        Frameworks são projetados para serem inteligentes sobre atualizações de UI. Você declara como a UI deve parecer baseada nos dados atuais (estado). Quando esses dados mudam, o framework determina eficientemente o conjunto mínimo de mudanças necessárias no DOM real. É como ter um assistente altamente otimizado que apenas repinta as partes necessárias, em vez de redecorar a casa inteira quando uma foto é movida. Esta abordagem declarativa frequentemente leva a código mais limpo e melhor performance.
+        Frameworks são mais espertos que isso. Você só diz como a interface deve ficar baseada nos dados, e ele se vira pra fazer as mudanças necessárias no DOM. É tipo ter um assistente que só repinta a parede que você mudou, em vez de redecorar a casa inteira.
       </p>
       <h3 id="accessibility">
-        ACESSIBILIDADE EM ESCALA: UMA ABORDAGEM ESTRUTURADA
+        ACESSIBILIDADE SEM DOR DE CABEÇA
       </h3>
       <p>
-        "Apenas use HTML semântico!" é um excelente conselho e um pilar do desenvolvimento web. Isso é Web Dev 101.
+        &quot;Só usa HTML semântico!&quot; - sim, isso é básico e importante. Mas e quando você precisa de algo mais complexo que as tags HTML padrão? Tipo uma tabela de dados com ordenação e filtros, ou um combobox que precisa ser acessível e ter autocomplete?
       </p>
       <p>
-        Mas e quanto a elementos de UI complexos e personalizados que vão além das tags HTML padrão? Considere grades de dados personalizadas com ordenação e filtragem, comboboxes acessíveis com recursos de digitação antecipada, ou visualizações em árvore navegáveis. Simplesmente adicionar role="button" a um <code>&lt;div&gt;</code> é um começo, mas a verdadeira acessibilidade para tais componentes envolve o gerenciamento cuidadoso de atributos ARIA, foco e interações de teclado. Implementar isso corretamente e consistentemente em muitas instâncias com JavaScript vanilla pode ser uma tarefa significativa.
-      </p>
-      <p>
-        Frameworks permitem que você construa um componente acessível uma vez, encapsulando todos os atributos e comportamentos ARIA necessários. Este componente pode então ser reutilizado, promovendo consistência e tornando mais fácil manter altos padrões de acessibilidade. Você preferiria gerenciar manualmente aria-expanded e estados relacionados em 50 instâncias diferentes de acordeão, ou defini-lo uma vez em um componente reutilizável? Para UIs complexas, confiar apenas em HTML básico pode às vezes inadvertidamente levar a experiências que não são totalmente acessíveis a todos os usuários.
+        Só colocar role="button" em um <code>&lt;div&gt;</code> não resolve. Você precisa gerenciar atributos ARIA, foco, interações de teclado... É um trabalho chato e fácil de errar. Usando uma framework, você faz um componente acessível uma vez e reusa. Muito mais fácil manter tudo consistente e acessível assim, e vamos jogar a real? Devs são preguiçosos, quer coisa melhor que corrigir um bug que levaria horas usando apenas um minuto? Use o resto do tempo pra tomar café ou ler um artigo como este!
       </p>
       <h3 id="developer-experience">
-        A FACHADA "SIMPLE"(SIMPLES) DO HTML PODE ÀS VEZES ESCONDER MUITO TRABALHO MANUAL DE JAVASCRIPT
+        A EXPERIÊNCIA DO DEV TAMBÉM IMPORTA
       </h3>
       <p>
-        Frases como "Sem erros de hidratação! Sem tree-shaking!" podem soar atraentes, enquadrando estes como complexidades a serem evitadas. No entanto, estes são frequentemente soluções sofisticadas para problemas reais que surgem ao construir aplicações client-side substanciais.
+        Frases como &quot;Sem erros de hidratação! Sem tree-shaking!&quot; podem parecer legais, como se fossem complexidades que a gente deveria evitar. Mas na verdade, são soluções pra problemas reais que aparecem quando você tá construindo aplicações complexas.
       </p>
       <p>
-        Optar por não usar um framework não faz estes problemas desaparecerem se os requisitos da aplicação inerentemente os envolvem. Frequentemente significa que o desenvolvedor ou equipe é agora responsável por implementar manualmente soluções para diffing de DOM, propagação de estado, code splitting para performance, e outras otimizações - tarefas que frameworks evoluíram para lidar efetivamente. Nem sempre é sobre escolher "simplicidade" sobre "complexidade", mas sim escolher aproveitar soluções bem testadas para problemas complexos comuns, ou construir essas soluções do zero. O último pode ser como escolher construir manualmente cada parte de uma máquina complexa quando componentes pré-fabricados e otimizados estão prontamente disponíveis.
-      </p>
-      <h3 id="global-js-vars">
-        CONFIAR NAS VARIÁVEIS GLOBAIS DE JAVASCRIPT BASEADAS EM ID DO HTML: UMA CURIOSIDADE HISTÓRICA
-      </h3>
-      <p>
-        É verdade que elementos HTML com atributos id podem às vezes se tornar variáveis JavaScript globais. Esta era uma "funcionalidade" de uma era anterior da web. Confiar nisso hoje pode ser arriscado.
+        Tree-shaking, por exemplo, é tipo aquela limpeza que você faz no armário: em vez de levar todas as roupas quando vai viajar, você pega só o que vai usar. No código, é a mesma coisa - o bundler (como Webpack ou Rollup) analisa seu código e remove todo aquele JavaScript que você importou mas não está usando. É tipo ter um assistente faxineiro que limpa seu código automaticamente, deixando só o que realmente importa. Sem isso, você acaba enviando um monte de código morto pro navegador do usuário, deixando sua aplicação mais pesada sem necessidade.
       </p>
       <p>
-        Pode poluir o namespace global, levar a colisões de nomes difíceis de debugar, e contribuir para uma base de código frágil e menos manutenível. Isso pode causar frustração significativa para desenvolvedores futuros (incluindo seu eu futuro!).
+        Ah, e o bundler? É tipo um organizador de festa: você tem várias coisas espalhadas (seus arquivos JavaScript, CSS, imagens...) e ele junta tudo de forma organizada, otimiza e entrega prontinho pro navegador. É como se você tivesse várias caixas de brinquedos espalhadas pela casa, e o bundler organiza tudo em uma única caixa, tirando o que não serve mais e deixando só o que você realmente usa. Webpack e Rollup são os bundlers mais populares, tipo os organizadores de festa mais conhecidos do mercado, os &quot;influencers&quot; de código! Rá!
       </p>
       <p>
-        Frameworks guiam desenvolvedores em direção a padrões mais robustos: componentes com escopo, fluxo de dados explícito (como props), e soluções dedicadas de gerenciamento de estado que não dependem da chance de que window.meuBotao não foi sobrescrito. Isso não é HTML "emprestando muletas"; são frameworks ajudando a evitar potenciais armadilhas inerentes a alguns comportamentos mais antigos do navegador.
+        Não usar um framework não vai fazer esses problemas desaparecerem. Só significa que você vai ter que resolver tudo na mão - diffing de DOM, propagação de estado, code splitting... É tipo escolher construir cada parte de uma máquina complexa do zero, quando você poderia usar componentes prontos e otimizados. E olha só o que toda esta sopa de letrinha significa:
       </p>
-      <h3 id="developer-experience">
-        EXPERIÊNCIA DO DESENVOLVEDOR (DX) IMPORTA PARA PRODUTIVIDADE E SATISFAÇÃO
-      </h3>
-      <p>
-        Considere recursos como Hot Module Replacement (vendo mudanças de UI instantaneamente sem perder o estado da aplicação durante o desenvolvimento), a rede de segurança do TypeScript, um vasto ecossistema de bibliotecas para tarefas desde internacionalização até animação, e linters, formatadores e debuggers robustos.
-      </p>
-      <p>
-        Frameworks, especialmente os maduros como React, vêm com um ecossistema que pode tornar o processo de desenvolvimento mais produtivo e agradável. Isso frequentemente se traduz em construir melhores aplicações, mais rapidamente. Fingir que lidar com inconsistências de navegador e padrões JavaScript mais antigos é inerentemente mais virtuoso pode ser um caminho menos eficiente para projetos complexos.
-      </p>
-      <h3 id="performance">
-        PERFORMANCE É MAIS DO QUE APENAS CARREGAMENTO INICIAL; É SOBRE A EXPERIÊNCIA DO USUÁRIO INTEIRA
-      </h3>
-      <p>
-        "Meu site HTML carrega em 50ms!" Isso é ótimo para entrega inicial. Mas o que acontece quando você adiciona login de usuário, busca de conteúdo dinâmico, filtragem e ordenação client-side, e atualizações em tempo real sem fazer a página se tornar não responsiva ou lenta?
-      </p>
-      <p>
-        Frameworks, particularmente quando combinados com seus meta-frameworks (como Next.js ou Remix para React), fornecem ferramentas para uma abordagem holística à performance. Isso inclui code-splitting (carregando apenas JavaScript necessário), server-side rendering (SSR) ou static site generation (SSG) para carregamentos iniciais rápidos combinados com capacidades dinâmicas, e navegação client-side suave. O objetivo é construir uma aplicação de alta performance, não apenas um documento que carrega rapidamente mas oferece interatividade limitada.
-      </p>
-      <h2 id="bloat">
-        MAS E O "BLOAT"? O EXCESSO DE JAVASCRIPT?
-      </h2>
-      <p>
-        É verdade: uma aplicação "Hello World" em um framework provavelmente terá uma pegada JavaScript inicial maior que um "Hello World" HTML puro. Isso é esperado. Mas a maioria das aplicações de produção são simples como "Hello World"? Se você está construindo um site de brochura muito simples, principalmente estático, de cinco páginas, então sim, HTML e CSS são provavelmente perfeitamente suficientes e a escolha mais eficiente. O "outro site" faz um bom ponto aqui. Não se precisa de uma escavadeira para plantar uma flor.
-      </p>
-      <p>Mas se o projeto envolve:</p>
       <ul>
-        <li>Uma plataforma SaaS</li>
-        <li>Um site de e-commerce com um carrinho de compras complexo e contas de usuário</li>
-        <li>Um feed de mídia social dinâmico</li>
-        <li>Uma ferramenta de gerenciamento de projetos rica em recursos</li>
-        <li>Um painel de visualização de dados interativo</li>
         <li>
-          Qualquer coisa com interatividade client-side significativa e estado que
-          precisa funcionar de forma confiável e ser manutenível
+          <strong>Diffing de DOM:</strong> É tipo quando você tem duas versões de um documento e precisa marcar o que mudou. No React, é como ter um assistente que olha o que mudou na interface e atualiza só aquilo, em vez de recarregar tudo. É tipo quando você muda só uma foto no álbum, em vez de refazer o álbum inteiro.
+        </li>
+        <li>
+          <strong>Propagação de estado:</strong> É como passar informações entre componentes. Tipo quando você tem um formulário e precisa que vários elementos saibam o que o usuário digitou. Sem um framework, é como tentar fazer várias pessoas se comunicarem sem WhatsApp - possível, mas trabalhoso e fácil de dar errado.
+        </li>
+        <li>
+          <strong>Code splitting:</strong> É tipo dividir um livro grande em capítulos. Em vez de carregar todo o código de uma vez, você carrega só o que o usuário precisa naquele momento. É como entrar em um restaurante e pedir só o que você vai comer, em vez de trazer o cardápio inteiro pra mesa.
         </li>
       </ul>
       <p>
-        ...então o "custo" JavaScript inicial de um framework pode ser visto como um investimento na infraestrutura necessária para construir e gerenciar essa complexidade. Ferramentas modernas como tree-shaking, code-splitting e lazy loading ajudam significativamente a mitigar este custo. É sobre selecionar a ferramenta apropriada para a tarefa, em vez de se ater a uma ferramenta familiar quando uma mais especializada seria mais efetiva para a escala do projeto.
+        É tipo escolher construir cada parte de uma máquina complexa do zero, quando você poderia usar componentes prontos e otimizados.
+      </p>
+      <h3 id="global-js-vars">
+        VARIÁVEIS GLOBAIS DE JAVASCRIPT: UMA RELÍQUIA DO PASSADO
+      </h3>
+      <p>
+        Sim, elementos HTML com id viram variáveis globais no JavaScript. Era uma &quot;funcionalidade&quot; da web antiga. Mas confiar nisso hoje em dia é pedir pra ter dor de cabeça.
+      </p>
+      <p>
+        Isso polui o namespace global, pode causar conflitos de nomes difíceis de debugar, e deixa seu código mais frágil. E acredite, seu eu do futuro vai te agradecer por não ter feito isso.
+      </p>
+      <p>
+        Frameworks te guiam pra padrões mais robustos: componentes com escopo próprio, fluxo de dados claro (como props), e soluções dedicadas pra gerenciar estado. Não é HTML &quot;precisando de muleta&quot;, é evitar armadilhas que existem na web desde sempre.
+      </p>
+      <h3 id="developer-experience">
+        FERRAMENTAS BOAS = DEV FELIZ = CÓDIGO MELHOR
+      </h3>
+      <p>
+        Pensa em coisas como Hot Module Replacement (ver mudanças instantaneamente sem perder o estado), TypeScript te avisando de erros antes de rodar, um monte de bibliotecas prontas pra tudo que você imaginar, e ferramentas de debug e formatação de código. Uma Disney World do programador!
+      </p>
+      <p>
+        Frameworks, especialmente os mais maduros como React, vêm com um ecossistema que torna o desenvolvimento mais produtivo e até divertido. Isso geralmente significa construir aplicações melhores, mais rápido. Fingir que lidar com inconsistências de navegador e JavaScript antigo é mais &quot;virtuoso&quot; só vai te atrasar em projetos complexos.
+      </p>
+      <h3 id="performance">
+        PERFORMANCE É MAIS QUE CARREGAMENTO RÁPIDO
+      </h3>
+      <p>
+        &quot;Meu site HTML carrega em 50ms!&quot; Legal! Mas e quando você adiciona login, busca dinâmica, filtros, ordenação e atualizações em tempo real? Como fazer tudo isso sem a página travar ou ficar lenta?
+      </p>
+      <p>
+        Frameworks, especialmente quando combinados com meta-frameworks como Next.js ou Remix, te dão ferramentas pra uma abordagem completa de performance. Isso inclui code-splitting (carregar só o JavaScript necessário), server-side rendering (SSR) ou static site generation (SSG) pra carregamentos rápidos, e navegação suave no cliente. O objetivo é construir uma aplicação que performa bem, não só uma página que carrega rápido mas não faz muita coisa.
+      </p>
+      <h2 id="bloat">
+        MAS E TODO AQUELE JAVASCRIPT EXTRA?
+      </h2>
+      <p>
+        É verdade: uma aplicação &quot;Hello World&quot; em um framework vai ter mais JavaScript que uma página HTML pura. Mas vamos ser sinceros: quantas aplicações reais são simples assim? Se você tá fazendo um site de 5 páginas que não muda nunca, então sim, HTML e CSS são mais que suficientes. Não precisa de uma escavadeira pra plantar uma flor.
+      </p>
+      <p>Mas se você tá fazendo:</p>
+      <ul>
+        <li>Uma plataforma SaaS</li>
+        <li>Um e-commerce com carrinho complexo e contas de usuário</li>
+        <li>Um feed de rede social que atualiza em tempo real</li>
+        <li>Uma ferramenta de gestão de projetos com várias funcionalidades</li>
+        <li>Um painel de dados interativo</li>
+        <li>Qualquer coisa que precise de interatividade e estado que funcione direito e seja fácil de manter</li>
+      </ul>
+      <p>
+        ...então aquele JavaScript extra do framework é tipo um investimento na infraestrutura que você vai precisar de qualquer jeito. Ferramentas modernas como tree-shaking, code-splitting e lazy loading ajudam muito a reduzir esse custo. É sobre usar a ferramenta certa pro trabalho, não ficar preso no que você já conhece quando algo mais especializado faria mais sentido.
       </p>
       <h2 id="when">
-        ENTÃO, QUANDO PODE SER UMA BOA IDEIA USAR REACT (OU UM FRAMEWORK SIMILAR)?
+        ENTÃO, QUANDO VALE A PENA USAR REACT (OU ALGO PARECIDO)?
       </h2>
       <ul>
         <li>
-          Quando sua aplicação tem estado client-side não trivial que precisa ser
-          gerenciado efetivamente.
+          Quando você tem um monte de estado pra gerenciar na interface e não quer virar um maluco tentando controlar tudo na mão.
         </li>
         <li>
-          Quando você precisa de componentes UI reutilizáveis para construir uma
-          interface consistente, manutenível e escalável.
+          Quando você tá cansado de copiar e colar o mesmo código em 50 lugares diferentes e depois ter que atualizar cada um deles.
         </li>
         <li>
-          Quando você está desenvolvendo uma Single Page Application (SPA) ou uma
-          aplicação que visa uma experiência fluida, tipo app, em vez de uma série
-          de carregamentos de documentos.
+          Quando você quer que sua aplicação se comporte como um app de verdade, sem aquela sensação de estar recarregando a página toda hora.
         </li>
         <li>
-          Quando você está trabalhando em uma equipe e precisa de estruturas,
-          padrões e vocabulário comuns.
+          Quando você trabalha em equipe e não quer que cada um faça as coisas do seu jeito, criando uma bagunça sem fim.
         </li>
         <li>
-          Quando a complexidade das interações do usuário provavelmente levaria a
-          "código espaguete" difícil de gerenciar se construído apenas com
-          JavaScript vanilla.
+          Quando você olha pro código e pensa &quot;se eu fizer isso com JavaScript puro, vai virar um espaguete que nem eu mesmo vou entender amanhã&quot;.
         </li>
         <li>
-          Quando você quer aproveitar um rico ecossistema de bibliotecas,
-          ferramentas e suporte da comunidade bem testados.
+          Quando você quer usar um monte de ferramentas legais que já foram testadas e aprovadas por milhares de devs.
         </li>
         <li>
-          Quando velocidade de desenvolvimento e a capacidade de construir
-          recursos complexos eficientemente são mais críticos que minimizar cada
-          último kilobyte para uma página largamente estática.
+          Quando você precisa entregar algo complexo rápido e não tem tempo pra reinventar a roda.
         </li>
       </ul>
       <h2 id="problem">
-        O VERDADEIRO DESAFIO NÃO É O FRAMEWORK EM SI, MAS COMO ESCOLHEMOS E USAMOS NOSSAS FERRAMENTAS
+        O PROBLEMA NÃO É O FRAMEWORK, É A GENTE MESMO!
       </h2>
       <p>
-        O desafio frequentemente está em selecionar a ferramenta certa para o trabalho. Às vezes, uma solução mais simples é de fato a melhor. Desenvolvedores podem ocasionalmente usar uma ferramenta superdimensionada para uma tarefa simples, ou adotar novas tecnologias sem avaliar completamente sua adequação para o problema em questão. Pode ser como usar uma ferramenta industrial de alta potência para um reparo delicado em casa - talvez exagero.
+        Olha só, às vezes a gente complica o que é simples. É tipo usar um trator pra plantar uma flor no jardim - exagero total! Tem hora que HTML e CSS puro são mais que suficientes.
       </p>
       <p>
-        No entanto, não vamos descartar ferramentas poderosas simplesmente porque podem ser mal aplicadas. React e frameworks similares são ferramentas capazes que resolvem problemas reais e complexos efetivamente. A questão geralmente não é a ferramenta em si, mas garantir que ela seja usada apropriadamente para a tarefa.
+        Mas não vamos jogar fora as ferramentas boas só porque tem gente usando elas errado. React e outros frameworks são tipo aquelas ferramentas que todo marceneiro bom tem na caixa - não é porque tem gente que não sabe usar que a ferramenta é ruim.
       </p>
       <p>
-        Então, para sua próxima aplicação web complexa, interativa e orientada a dados, CONSIDERE USAR REACT (OU UM FRAMEWORK SIMILAR). Não é sobre pureza, mas sobre pragmatismo e escolher ferramentas que podem ajudar você e sua equipe a construir aplicações robustas e manuteníveis. Seus usuários (e seu eu futuro, encarregado de manter a base de código) provavelmente apreciarão a estrutura e capacidades que estes frameworks fornecem.
+        Então, na próxima vez que você for fazer uma aplicação web que precisa de mais do que mostrar um texto bonito, DÁ UMA CHANCE PRO REACT (OU ALGO PARECIDO). Não é sobre ser purista, é sobre usar o que funciona melhor. Seus usuários vão agradecer, e seu eu do futuro que vai ter que manter o código também!
       </p>
       <p>
-        Agora, vá em frente e construa algo incrível, aproveitando as melhores ferramentas para seus desafios específicos, em vez de criar uma solução HTML que pode não escalar com suas ambições.
+        Agora vai lá e faz algo legal! Usa as ferramentas certas pro seu projeto, sem complicar o que é simples, mas também sem simplificar o que é complexo.
       </p>
       <h2 id="footer" className="sr-only">
         RODAPÉ
@@ -320,6 +324,31 @@ export default function Home() {
         </span>
       </p>
       <p>
+      <strong>Traduzido por:</strong>
+        <br />
+        <span>
+          Rudwolf (Rodolfo Rodrigues) (
+          <a
+            href="https://github.com/rudwolf"
+            target="_blank"
+            rel="noopener noreferrer"
+            title="Ver meu perfil do GitHub"
+          >
+            GitHub
+          </a>{" "}
+          /
+          <a
+            href="https://x.com/rudwolf"
+            target="_blank"
+            rel="noopener noreferrer"
+            title="Ver meu perfil do X"
+          >
+            Twitter
+          </a>)
+        </span>
+        <br />
+      </p>
+      <p>
         Inspirado por{" "}
         <a
           href="https://justfuckingusehtml.com/"
@@ -332,16 +361,32 @@ export default function Home() {
       </p>
       <p>
         <strong>
+        <strong>
+          <a
+            href="https://github.com/rudwolf/just-fucking-use-react-pt_br"
+            target="_blank"
+            rel="noopener noreferrer"
+            title="Ver o código fonte no GitHub"
+          >
+            Ver o código fonte no GitHub da minha versão
+          </a>
+        </strong>
+        </strong>
+      </p>
+      <p>
+        <strong>
           <a
             href="https://github.com/burakcan/just-fucking-use-react"
             target="_blank"
             rel="noopener noreferrer"
             title="Ver o código fonte no GitHub"
           >
-            Ver o código fonte no GitHub
+            Ver o código fonte original do burakcan no GitHub
           </a>
         </strong>
       </p>
     </main>
   );
 }
+
+

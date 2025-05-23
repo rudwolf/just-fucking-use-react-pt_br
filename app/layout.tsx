@@ -3,7 +3,6 @@ import { Geist, PT_Serif } from "next/font/google";
 import { GoogleAnalytics } from "@next/third-parties/google";
 import { ThemeProvider } from "@/components/ThemeProvider";
 import { Button } from "@/components/ui/button";
-import { GithubIcon } from "lucide-react";
 import { ThemeToggle } from "@/components/ThemeToggle";
 import "./globals.css";
 
@@ -19,9 +18,9 @@ const ptSerif = PT_Serif({
 });
 
 const siteUrl = "https://justfuckingusereact.com";
-const siteTitle = "Just Fucking Use React";
+const siteTitle = "Use React, Meu Amigo";
 const siteDescription =
-  "An opinionated guide on why and when to use React (or similar JavaScript frameworks) for modern web development, especially for complex, interactive applications. Challenges the 'pure HTML' narrative.";
+  "Um guia opinativo sobre por que e quando usar React (ou frameworks JavaScript similares) para desenvolvimento web moderno, especialmente para aplicações complexas e interativas. Desafia a narrativa do 'HTML puro'.";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
@@ -34,16 +33,17 @@ export const metadata: Metadata = {
     "react",
     "javascript",
     "framework",
-    "web development",
+    "desenvolvimento web",
     "html",
     "frontend",
-    "rant",
-    "just fucking use react",
-    "complexity",
+    "aplicações complexas",
     "spa",
     "single page application",
+    "português",
+    "brasil",
   ],
   authors: [
+    { name: "Rudwolf", url: "https://github.com/rudwolf" },
     { name: "Omercan", url: "https://github.com/obsfx" },
     { name: "Burak", url: "https://github.com/burakcan" },
   ],
@@ -60,15 +60,15 @@ export const metadata: Metadata = {
         alt: siteTitle,
       },
     ],
-    locale: "en_US",
+    locale: "pt_BR",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
     title: siteTitle,
     description: siteDescription,
-    site: "@neoberg",
-    creator: "@neoberg",
+    site: "@rudwolf",
+    creator: "@rudwolf",
     images: [siteUrl + "/twitter.png"],
   },
   robots: {
@@ -101,12 +101,26 @@ export default function RootLayout({
           <div className="fixed top-4 right-4 flex gap-2 z-50">
             <Button size="icon" asChild>
               <a
-                href="https://github.com/burakcan/just-fucking-use-react"
+                href="https://github.com/rudwolf/just-fucking-use-react-pt_br"
                 target="_blank"
                 rel="noopener noreferrer"
-                title="View the source code on GitHub"
+                title="Ver o código fonte no Github"
               >
-                <GithubIcon className="h-4 w-4" />
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  className="h-4 w-4"
+                >
+                  <path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4" />
+                  <path d="M9 18c-4.51 2-5-2-7-2" />
+                </svg>
               </a>
             </Button>
             <ThemeToggle />

@@ -280,7 +280,7 @@ export default function StateManagementDemo() {
 
               <div className="space-y-2">
                 <Label htmlFor="rows-visible" className="font-medium">
-                  Data Rows to Show
+                Quantidade de Linhas
                 </Label>
                 <Input
                   id="rows-visible"

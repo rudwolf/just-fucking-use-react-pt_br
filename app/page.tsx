@@ -4,439 +4,258 @@ export default function Home() {
   return (
     <main className="prose dark:prose-invert prose-lg mx-auto max-w-[80ch] py-16 px-4">
       <h1>
-        JUST FUCKING USE REACT <br />
+        USE REACT, MEU AMIGO <br />
         <small className="text-xs font-bold font-sans">
-          (OR ANY FRAMEWORK, YOU GODDAMN LUDDITE)
+          (OU QUALQUER FRAMEWORK MODERNO, ESPECIALMENTE PARA PROJETOS COMPLEXOS)
         </small>
       </h1>
 
       <ul className="sr-only">
         <li>
-          <a href="#start">Content</a>
+          <a href="#start">Conteúdo</a>
         </li>
         <li>
-          <a href="#wtf">What the fuck is this about?</a>
+          <a href="#wtf">Qual é a ideia aqui?</a>
         </li>
         <li>
           <a href="#why">
-            Why the fuck would I ditch my &quot;pure HTML&quot; Nirvana for this
-            JavaScript sorcery?
+            Por que considerar frameworks modernos em vez de HTML puro?
           </a>
 
           <ul>
             <li>
               <a href="#components">
-                Components, motherfucker! Do you speak it?
+                Componentes: construa uma vez, use em todo lugar
               </a>
             </li>
             <li>
               <a href="#ui">
-                Smarter UI updates, so you don&apos;t have to be a fucking
-                DOM-manipulating peasant.
+                Atualizações de UI mais inteligentes e eficientes
               </a>
             </li>
             <li>
               <a href="#accessibility">
-                Accessibility at scale? Good luck with your &quot;semantic&quot;
-                div soup and prayers, asshole.
+                Acessibilidade em escala: uma abordagem estruturada
               </a>
             </li>
             <li>
               <a href="#developer-experience">
-                Developer experience (DX) actually fucking matters, unless you
-                enjoy pain.
+                Experiência do desenvolvedor importa para produtividade
               </a>
             </li>
             <li>
               <a href="#performance">
-                Performance is just about initial load like some primitive page
-                speed fetishist, it&apos;s about perceived performance and
-                interaction, you short-sighted goon.
+                Performance vai além do carregamento inicial
               </a>
             </li>
           </ul>
         </li>
         <li>
           <a href="#bloat">
-            But what about the fucking bloat? The JavaScript overload? My users
-            are on dial-up in Antarctica!
+            Mas e o "bloat"? O excesso de JavaScript? Meus usuários estão no dial-up!
           </a>
         </li>
         <li>
           <a href="#when">
-            When should I just fucking use React (or a similar framework), you
-            slow learner?
+            Quando usar React (ou um framework similar)?
           </a>
         </li>
         <li>
           <a href="#problem">
-            The real fucking problem isn&apos;t React. It&apos;s you, you
-            misguided fool.
+            O verdadeiro desafio não é o framework, mas como escolhemos nossas ferramentas
           </a>
         </li>
         <li>
-          <a href="#footer">Footer</a>
+          <a href="#footer">Rodapé</a>
         </li>
       </ul>
-
       <p id="start">
-        Look, I get it. You saw that other site. &quot;HTML is king&quot;,
-        &quot;Keep it simple, stupid&quot;,{" "}
-        <span className="geocities">
-          &quot;My GeoCities page from &apos;98 still loads faster than your
-          SPA.&quot;
-        </span>
-        . Fucking adorable. Like a toddler proudly showing off a mud pie.
+        Adaptado livremente do artigo de Kent C. Dodds, “Just Use React”, para o contexto dos desenvolvedores de front end do Brasil, com uma linguagem mais próxima do nosso dia a dia. Que por sua vez foi adaptado também do artigo no site justf***ingusereact.com. O original usa linguagem forte para dar ênfase ao humor (e palavrões), porém Kent C. Dodds o refez para uma versão mais amigável. Esse é realmente o ponto principal.
       </p>
       <p>
-        It&apos;s a nice sentiment, like wishing we could all go back to
-        bartering with seashells instead of dealing with the goddamn stock
-        market. But the web isn&apos;t just a collection of fucking pamphlets
-        anymore, you fossil. It&apos;s where work gets done, where communities
-        are built, where complex interactions happen. You know, shit that
-        actually <em>does</em> something beyond displaying your &quot;Fucking
-        beautiful button.&quot;
-      </p>
-      <h2 id="wtf">SO, WHAT THE FUCK IS THIS ABOUT?</h2>
-      <p>
-        This is about acknowledging that{" "}
-        <mark>
-          sometimes, complexity is not a choice, it&apos;s a fucking
-          requirement.
-        </mark>{" "}
-        And when that complexity hits, trying to wrangle it with{" "}
-        <code>document.getElementById</code> and a prayer is like trying to
-        build a goddamn space shuttle with fucking popsicle sticks and glue. You
-        might get something that looks vaguely shuttle-shaped, but it&apos;ll be
-        a wobbly, unmaintainable, terrifying piece of shit that explodes on the
-        launchpad.
+        Dito isso, há pontos interessantes na postagem, portanto, esta versão visa a transmitir a mensagem principal sem palavrões ou linguagem grosseira. Basicamente, apenas entreguei o original à IA e pedi que o tornasse mais agradável. Estou publicando-a aqui em parte como uma piada e também porque ler palavrões me dói a cabeça.
       </p>
       <p>
-        This is a call to embrace the tools built by smart motherfuckers to
-        solve the hard problems so you can focus on building your cool shit, not
-        reinventing the goddamn wheel for the 87th time this sprint, you
-        stubborn jackass.
+        Entendo sua preocupação. Você provavelmente já viu discussões defendendo "HTML puro", "mantenha simples", ou comentários como "Minha página do GeoCities de 98 ainda carrega mais rápido que seu SPA". São pontos válidos em muitos contextos, e o desejo por simplicidade é louvável.
+      </p>
+      <p>
+        É um sentimento bonito, como desejar sistemas econômicos mais simples. No entanto, a web hoje frequentemente hospeda mais do que apenas páginas informativas estáticas. É uma plataforma para aplicações dinâmicas, espaços de trabalho colaborativos e experiências interativas ricas. Estes geralmente exigem um conjunto diferente de ferramentas e abordagens do que um "botão muito bonito" em uma página estática.
+      </p>
+      <h2 id="wtf">ENTÃO, QUAL É A IDEIA AQUI?</h2>
+      <p>
+        A ideia é reconhecer que às vezes, a complexidade em um projeto não é uma escolha arbitrária, mas um requisito genuíno das funcionalidades sendo construídas. Quando esses requisitos complexos surgem, tentar gerenciar tudo com manipulação direta do DOM e arquivos JavaScript independentes pode se tornar como construir uma máquina sofisticada apenas com as ferramentas manuais mais básicas. Você pode até conseguir, mas o processo pode ser desafiador e o resultado mais difícil de manter ou escalar.
+      </p>
+      <p>
+        Este é um convite para considerar as poderosas ferramentas desenvolvidas por muitos engenheiros talentosos. Estas ferramentas são projetadas para lidar com complexidades comuns, permitindo que equipes de desenvolvimento se concentrem na lógica única da aplicação e na experiência do usuário, em vez de resolver repetidamente problemas fundamentais.
       </p>
       <h2 id="why">
-        WHY THE FUCK WOULD I DITCH MY &quot;PURE HTML&quot; NIRVANA FOR THIS
-        JAVASCRIPT SORCERY?
+        POR QUE CONSIDERAR MUDAR DE "HTML PURO" PARA FRAMEWORKS JAVASCRIPT?
       </h2>
       <p>
-        Because you&apos;re not just displaying static text from a fucking stone
-        tablet, are you? You want to build something interactive, something
-        dynamic, something that doesn&apos;t make your users want to gouge their
-        eyes out with a rusty spoon. You want to build an <em>application</em>,
-        not a fucking flyer.
+        Porque frequentemente, o objetivo é construir mais do que um documento estático. Você está procurando criar algo interativo, dinâmico e amigável ao usuário - uma aplicação que oferece uma experiência rica, não apenas um panfleto digital.
       </p>
       <p>
-        Here&apos;s why you should just fucking use React (or Vue, or Svelte, or
-        Angular if you&apos;re a masochist - the point is a modern framework,
-        you troglodyte):
+        Aqui está por que usar React (ou Vue, Svelte, Angular, ou um framework moderno similar) pode ser benéfico, especialmente à medida que a complexidade do projeto cresce:
       </p>
 
       <h3>
-        HTML&apos;S &quot;INTERACTIVITY&quot; IS FOR FUCKING GUESTBOOKS AND
-        CIRCUS SIDESHOWS, NOT ACTUAL APPLICATIONS, YOU DELUSIONAL TWIT.
+        A INTERATIVIDADE NATIVA DO HTML É UM ÓTIMO PONTO DE PARTIDA, MAS PODE NÃO SER SUFICIENTE PARA APLICAÇÕES RICAS
       </h3>
       <p>
-        &quot;But HTML has <code>&lt;details&gt;</code> and{" "}
-        <code>&lt;dialog&gt;</code> and forms!&quot; Yeah, and your toddler has
-        crayons. Adorable, but not exactly the tools for designing a fucking
-        skyscraper, are they?
+        "Mas HTML tem <code>&lt;details&gt;</code>, <code>&lt;dialog&gt;</code> e formulários!" Absolutamente, e estes são fantásticos para muitos casos de uso. São blocos de construção essenciais. No entanto, eles são sempre suficientes para um editor colaborativo em tempo real, um painel de trading dinâmico, ou uma ferramenta de gerenciamento de projetos de nível empresarial?
       </p>
       <p>
-        You think you&apos;re gonna build a real-time collaborative editor, a
-        dynamic trading dashboard, or an enterprise-grade project management
-        tool with those HTML &quot;interactive&quot; elements and a sprinkle of{" "}
-        <code>onClick</code>? You&apos;re dreaming, you magnificent simpleton.
-        That shit is for when you need a button to say &quot;boo!&quot; not for
-        orchestrating complex user workflows.
+        Ao construir tais aplicações, os elementos interativos nativos do HTML, mesmo com JavaScript vanilla, podem exigir uma quantidade significativa de código personalizado para orquestrar fluxos de trabalho complexos e gerenciar estado. O que o HTML fornece são os elementos fundamentais; frameworks frequentemente fornecem a estrutura e maquinaria para construir sistemas mais elaborados sobre esses fundamentos.
       </p>
+      <h3 id="state-management">GERENCIAMENTO EFETIVO DE ESTADO É FUNDAMENTAL</h3>
       <p>
-        HTML gives you a fucking pebble; frameworks give you a goddamn quarry
-        and the heavy machinery to build a fortress. What are you gonna build
-        with your pebble, huh? A really impressive fucking paperweight?
-      </p>
-      <h3 id="state-management">STATE MANAGEMENT, YOU CLUELESS APE!</h3>
-      <p>
-        Oh, you think managing a &quot;like&quot; button&apos;s state by
-        toggling a class is peak complexity? Cute. Try building a dashboard with
-        a dozen filters, real-time updates from ten different sources, user
-        preferences that change everything, and collaborative editing where five
-        assholes are mashing keys at once. Your &quot;simple&quot; JavaScript
-        will turn into a spaghetti monster that&apos;ll make Cthulhu look like a
-        fucking Teletubby having a tea party. Frameworks give you sane ways to
-        manage this chaos. Without them, you&apos;re just pissing in the wind,
-        hoping a global variable doesn&apos;t fuck you sideways.
+        Gerenciar o estado de um simples botão "curtir" alternando uma classe é direto. Mas considere um painel com múltiplos filtros, dados em tempo real de várias fontes, preferências específicas do usuário, e talvez até recursos de edição colaborativa. Uma abordagem JavaScript "simples" aqui pode rapidamente levar a uma teia emaranhada de lógica interconectada que é difícil de debugar e manter. Frameworks oferecem maneiras estruturadas e frequentemente mais intuitivas de gerenciar este tipo de estado de aplicação. Sem eles, desenvolvedores podem se encontrar navegando por um caminho complicado, esperando evitar conflitos de variáveis globais ou bugs difíceis de rastrear.
       </p>
       <StateManagementDemo />
-      <h3 id="components">COMPONENTS, MOTHERFUCKER! DO YOU SPEAK IT?</h3>
+      <h3 id="components">COMPONENTES: CONSTRUA UMA VEZ, USE EM TODO LUGAR</h3>
       <p>
-        Remember when you copied and pasted that same navigation bar HTML into
-        30 different pages, then had to update it in 30 different places because
-        the client wanted a new fucking link? Yeah, fucking brilliant. You
-        probably felt like a goddamn genius.
+        Lembra das vezes que você pode ter copiado e colado HTML para uma barra de navegação em muitas páginas, apenas para atualizar cada instância quando um novo link era necessário? É uma abordagem inicial comum, e compreensível na época.
       </p>
       <p>
-        Frameworks like React force you to think in terms of reusable,
-        encapsulated components. Build a button once, style it once, add its
-        logic once, and then reuse that beautiful bastard everywhere. Change it
-        in one place, and it updates everywhere. This isn&apos;t just
-        convenience; it&apos;s fucking sanity at scale, you repetitive dolt.
+        Frameworks como React encorajam (ou forçam) pensar em termos de componentes reutilizáveis e encapsulados. Um botão, um campo de formulário, ou um cartão de perfil de usuário inteiro pode ser construído uma vez - sua estrutura, estilo e lógica definidos em um lugar - e então reutilizado onde for necessário. Uma mudança na definição do componente o atualiza em todos os lugares. Isso não é apenas sobre conveniência; é sobre manutenibilidade, consistência e sanidade, especialmente à medida que as aplicações crescem ou são trabalhadas por equipes.
       </p>
       <h3 id="ui">
-        SMARTER UI UPDATES, SO YOU DON&apos;T HAVE TO BE A FUCKING
-        DOM-MANIPULATING PEASANT.
+        ATUALIZAÇÕES DE UI MAIS INTELIGENTES E EFICIENTES
       </h3>
       <p>
-        Remember trying to manually update a dozen different parts of your page
-        whenever one piece of data changed? You&apos;d be there, meticulously
-        telling each <code>&lt;span&gt;</code> and <code>&lt;div&gt;</code> to
-        refresh, praying you didn&apos;t miss one or cause the whole goddamn
-        page to flicker like a haunted TV possessed by a meth addict.
+        Atualizar manualmente muitas partes de uma página quando um único pedaço de dados muda pode ser propenso a erros. Você pode se encontrar meticulosamente dizendo a cada <code>&lt;span&gt;</code> e <code>&lt;div&gt;</code> para atualizar, esperando não perder nada ou causar re-renderizações ineficientes de toda a página.
       </p>
       <p>
-        Frameworks are built to be clever about this shit. You tell them what
-        your UI <em>should</em> look like based on your data. When the data
-        changes, the framework does the heavy lifting. It&apos;s like having a
-        super-smart assistant who only redraws the bits that actually need
-        redrawing, instead of repainting the whole damn house every time you
-        move a fucking chair. Are you really going to sit there and imperatively
-        poke at the DOM like some kind of digital caveman?
+        Frameworks são projetados para serem inteligentes sobre atualizações de UI. Você declara como a UI deve parecer baseada nos dados atuais (estado). Quando esses dados mudam, o framework determina eficientemente o conjunto mínimo de mudanças necessárias no DOM real. É como ter um assistente altamente otimizado que apenas repinta as partes necessárias, em vez de redecorar a casa inteira quando uma foto é movida. Esta abordagem declarativa frequentemente leva a código mais limpo e melhor performance.
       </p>
       <h3 id="accessibility">
-        ACCESSIBILITY AT SCALE? GOOD LUCK WITH YOUR &quot;SEMANTIC&quot; DIV
-        SOUP AND PRAYERS, ASSHOLE.
+        ACESSIBILIDADE EM ESCALA: UMA ABORDAGEM ESTRUTURADA
       </h3>
       <p>
-        &quot;Just use semantic HTML!&quot; they shriek, like they&apos;ve
-        discovered the goddamn Rosetta Stone. Fucking groundbreaking.
-        That&apos;s Web Dev 101, you patronizing prick.
+        "Apenas use HTML semântico!" é um excelente conselho e um pilar do desenvolvimento web. Isso é Web Dev 101.
       </p>
       <p>
-        But what happens when your &quot;simple&quot; HTML tags aren&apos;t
-        enough for the complex, custom UI your application{" "}
-        <em>actually needs</em>? Think custom data grids that sort and filter,
-        accessible comboboxes that don&apos;t suck, or tree views that a screen
-        reader can actually navigate. You think slapping{" "}
-        <code>role=&quot;button&quot;</code> on a <code>&lt;div&gt;</code> and
-        calling it a day makes your app accessible? Get the fuck out.
+        Mas e quanto a elementos de UI complexos e personalizados que vão além das tags HTML padrão? Considere grades de dados personalizadas com ordenação e filtragem, comboboxes acessíveis com recursos de digitação antecipada, ou visualizações em árvore navegáveis. Simplesmente adicionar role="button" a um <code>&lt;div&gt;</code> é um começo, mas a verdadeira acessibilidade para tais componentes envolve o gerenciamento cuidadoso de atributos ARIA, foco e interações de teclado. Implementar isso corretamente e consistentemente em muitas instâncias com JavaScript vanilla pode ser uma tarefa significativa.
       </p>
       <p>
-        Real accessibility for complex widgets means meticulous ARIA attributes,
-        robust focus management, and proper keyboard navigation. With your
-        &quot;just HTML and vanilla JS&quot; approach, you&apos;re hand-cranking
-        that for <em>every single instance</em>, praying you don&apos;t fuck it
-        up and make some poor bastard&apos;s life hell.
-      </p>
-      <p>
-        Frameworks let you build an <em>accessible component</em> once, nail all
-        that shit, and then reuse it, ensuring consistency. Or are you gonna
-        tell me you <em>enjoy</em> manually managing <code>aria-expanded</code>{" "}
-        on 50 different accordions, you goddamn masochist? &quot;Just HTML&quot;
-        for complex apps often becomes{" "}
-        <mark>
-          &quot;just fucking inaccessible for anyone who isn&apos;t you.&quot;
-        </mark>
+        Frameworks permitem que você construa um componente acessível uma vez, encapsulando todos os atributos e comportamentos ARIA necessários. Este componente pode então ser reutilizado, promovendo consistência e tornando mais fácil manter altos padrões de acessibilidade. Você preferiria gerenciar manualmente aria-expanded e estados relacionados em 50 instâncias diferentes de acordeão, ou defini-lo uma vez em um componente reutilizável? Para UIs complexas, confiar apenas em HTML básico pode às vezes inadvertidamente levar a experiências que não são totalmente acessíveis a todos os usuários.
       </p>
       <h3 id="developer-experience">
-        THAT &quot;SIMPLE&quot; HTML FAÇADE HIDES A SWAMP OF MANUAL JS BULLSHIT
-        YOU&apos;RE TOO STUBBORN TO ADMIT EXISTS, YOU FUCKING OSTRICH.
+        A FACHADA "SIMPLE"(SIMPLES) DO HTML PODE ÀS VEZES ESCONDER MUITO TRABALHO MANUAL DE JAVASCRIPT
       </h3>
       <p>
-        &quot;No hydration errors! No tree-shaking!&quot; they boast, like these
-        are plagues sent by Satan himself rather than sophisticated solutions to
-        complex problems that <em>you will face</em> if you build anything more
-        advanced than a fucking &quot;Under Construction&quot; GIF.
+        Frases como "Sem erros de hidratação! Sem tree-shaking!" podem soar atraentes, enquadrando estes como complexidades a serem evitadas. No entanto, estes são frequentemente soluções sofisticadas para problemas reais que surgem ao construir aplicações client-side substanciais.
       </p>
       <p>
-        Avoiding framework solutions doesn&apos;t make the problems disappear,
-        dipshit; it just means <em>you</em> are now manually wrestling with DOM
-        diffing, state propagation, code splitting, and performance
-        optimizations, probably with the grace of a drunken donkey.
-      </p>
-      <p>
-        You&apos;re not choosing &quot;simplicity&quot;; you&apos;re choosing to
-        reinvent countless wheels, badly, and call it &quot;artisanal
-        purity.&quot; It&apos;s like bragging your car has no engine while
-        you&apos;re pushing it uphill, in a fucking blizzard, with your bare
-        feet, screaming &quot;THIS IS FINE!&quot;
+        Optar por não usar um framework não faz estes problemas desaparecerem se os requisitos da aplicação inerentemente os envolvem. Frequentemente significa que o desenvolvedor ou equipe é agora responsável por implementar manualmente soluções para diffing de DOM, propagação de estado, code splitting para performance, e outras otimizações - tarefas que frameworks evoluíram para lidar efetivamente. Nem sempre é sobre escolher "simplicidade" sobre "complexidade", mas sim escolher aproveitar soluções bem testadas para problemas complexos comuns, ou construir essas soluções do zero. O último pode ser como escolher construir manualmente cada parte de uma máquina complexa quando componentes pré-fabricados e otimizados estão prontamente disponíveis.
       </p>
       <h3 id="global-js-vars">
-        RELYING ON HTML&apos;S AUTO-GLOBAL JS VARS? THAT&apos;S AMATEUR HOUR
-        SHIT FROM THE JURASSIC PERIOD OF THE WEB, YOU FUCKING HACK.
+        CONFIAR NAS VARIÁVEIS GLOBAIS DE JAVASCRIPT BASEADAS EM ID DO HTML: UMA CURIOSIDADE HISTÓRICA
       </h3>
       <p>
-        So HTML magically creates a JavaScript variable for any element with an{" "}
-        <code>id</code>? Wow, what a &quot;feature&quot; - from 1998, when your
-        modem sounded like a dying robot. Relying on that is like building your
-        house on a foundation of wet toilet paper and hoping for the best.
+        É verdade que elementos HTML com atributos id podem às vezes se tornar variáveis JavaScript globais. Esta era uma "funcionalidade" de uma era anterior da web. Confiar nisso hoje pode ser arriscado.
       </p>
       <p>
-        It pollutes the global namespace, creates impossible-to-debug naming
-        collisions, and is a one-way ticket to a fragile, unmaintainable
-        codebase that will make your future self (and anyone else who has to
-        touch it) curse your very existence.
+        Pode poluir o namespace global, levar a colisões de nomes difíceis de debugar, e contribuir para uma base de código frágil e menos manutenível. Isso pode causar frustração significativa para desenvolvedores futuros (incluindo seu eu futuro!).
       </p>
       <p>
-        Frameworks drag you, kicking and screaming if necessary, towards sanity:
-        scoped components, explicit props, and actual state management solutions
-        that don&apos;t rely on praying <code>window.myFuckingButton</code>{" "}
-        doesn&apos;t get clobbered by some other piece of shit code. That&apos;s
-        not HTML &quot;lending crutches&quot;; it&apos;s HTML setting fucking
-        landmines in your code, you clueless buffoon.
+        Frameworks guiam desenvolvedores em direção a padrões mais robustos: componentes com escopo, fluxo de dados explícito (como props), e soluções dedicadas de gerenciamento de estado que não dependem da chance de que window.meuBotao não foi sobrescrito. Isso não é HTML "emprestando muletas"; são frameworks ajudando a evitar potenciais armadilhas inerentes a alguns comportamentos mais antigos do navegador.
       </p>
       <h3 id="developer-experience">
-        DEVELOPER EXPERIENCE ACTUALLY FUCKING MATTERS, UNLESS YOU ENJOY PAIN.
+        EXPERIÊNCIA DO DESENVOLVEDOR (DX) IMPORTA PARA PRODUTIVIDADE E SATISFAÇÃO
       </h3>
       <p>
-        Hot Module Replacement? See your changes instantly without losing state.
-        Typed JavaScript with TypeScript? Catch errors before they hit
-        production and make you look like an idiot. A massive ecosystem of
-        libraries for everything from internationalization to animation?
-        Linters, formatters, debuggers that actually work instead of making you
-        want to punch your monitor?
+        Considere recursos como Hot Module Replacement (vendo mudanças de UI instantaneamente sem perder o estado da aplicação durante o desenvolvimento), a rede de segurança do TypeScript, um vasto ecossistema de bibliotecas para tarefas desde internacionalização até animação, e linters, formatadores e debuggers robustos.
       </p>
       <p>
-        Frameworks, especially React, bring an entire ecosystem that makes your
-        life as a developer less miserable. This means you can build better
-        shit, faster.
-      </p>
-      <p>
-        Stop pretending that wrestling with browser quirks and{" "}
-        <code>document.write</code> in vanilla JS is some noble,
-        character-building pursuit. It&apos;s just fucking stupid.
+        Frameworks, especialmente os maduros como React, vêm com um ecossistema que pode tornar o processo de desenvolvimento mais produtivo e agradável. Isso frequentemente se traduz em construir melhores aplicações, mais rapidamente. Fingir que lidar com inconsistências de navegador e padrões JavaScript mais antigos é inerentemente mais virtuoso pode ser um caminho menos eficiente para projetos complexos.
       </p>
       <h3 id="performance">
-        PERFORMANCE ISN&apos;T JUST ABOUT INITIAL LOAD LIKE SOME PRIMITIVE PAGE
-        SPEED FETISHIST, IT&apos;S ABOUT PERCEIVED PERFORMANCE AND INTERACTION,
-        YOU SHORT-SIGHTED GOON.
+        PERFORMANCE É MAIS DO QUE APENAS CARREGAMENTO INICIAL; É SOBRE A EXPERIÊNCIA DO USUÁRIO INTEIRA
       </h3>
       <p>
-        &quot;My HTML site loads in 50ms!&quot; Cool. Now add user login,
-        dynamic content, filtering, sorting, and real-time updates without the
-        page shitting itself.
+        "Meu site HTML carrega em 50ms!" Isso é ótimo para entrega inicial. Mas o que acontece quando você adiciona login de usuário, busca de conteúdo dinâmico, filtragem e ordenação client-side, e atualizações em tempo real sem fazer a página se tornar não responsiva ou lenta?
       </p>
       <p>
-        Frameworks, especially when paired with their extended ecosystems (think
-        Next.js or Remix for React), give you tools like code-splitting (only
-        load the JS you need for this page, not the whole goddamn phonebook),
-        server-side rendering (SSR) or static site generation (SSG) for fast
-        initial loads <em>and</em> dynamic capabilities, and client-side
-        navigation that feels instantaneous. You can build a lightning-fast{" "}
-        <em>application</em>, not just a fast document that does fuck-all.
+        Frameworks, particularmente quando combinados com seus meta-frameworks (como Next.js ou Remix para React), fornecem ferramentas para uma abordagem holística à performance. Isso inclui code-splitting (carregando apenas JavaScript necessário), server-side rendering (SSR) ou static site generation (SSG) para carregamentos iniciais rápidos combinados com capacidades dinâmicas, e navegação client-side suave. O objetivo é construir uma aplicação de alta performance, não apenas um documento que carrega rapidamente mas oferece interatividade limitada.
       </p>
       <h2 id="bloat">
-        BUT WHAT ABOUT THE FUCKING BLOAT? THE JAVASCRIPT OVERLOAD? MY USERS ARE
-        ON DIAL-UP IN ANTARCTICA!
+        MAS E O "BLOAT"? O EXCESSO DE JAVASCRIPT?
       </h2>
       <p>
-        Yes, a &quot;Hello World&quot; in a framework is bigger than a
-        &quot;Hello World&quot; in HTML. <strong>No shit, Sherlock.</strong> Are
-        you building a fucking &quot;Hello World&quot; app for production? If
-        you&apos;re building a five-page static brochure site for your
-        aunt&apos;s dog-walking business that hasn&apos;t had a customer since
-        2003, then yes, for the love of God, just fucking use HTML and some CSS.
-        That other site is right about that. You don&apos;t need a fucking
-        bazooka to swat a fly.
+        É verdade: uma aplicação "Hello World" em um framework provavelmente terá uma pegada JavaScript inicial maior que um "Hello World" HTML puro. Isso é esperado. Mas a maioria das aplicações de produção são simples como "Hello World"? Se você está construindo um site de brochura muito simples, principalmente estático, de cinco páginas, então sim, HTML e CSS são provavelmente perfeitamente suficientes e a escolha mais eficiente. O "outro site" faz um bom ponto aqui. Não se precisa de uma escavadeira para plantar uma flor.
       </p>
-      <p>But if you&apos;re building:</p>
+      <p>Mas se o projeto envolve:</p>
       <ul>
-        <li>A SaaS platform</li>
-        <li>An e-commerce site with a complex cart and user accounts</li>
-        <li>A social media feed</li>
-        <li>A project management tool</li>
-        <li>A data visualization dashboard</li>
+        <li>Uma plataforma SaaS</li>
+        <li>Um site de e-commerce com um carrinho de compras complexo e contas de usuário</li>
+        <li>Um feed de mídia social dinâmico</li>
+        <li>Uma ferramenta de gerenciamento de projetos rica em recursos</li>
+        <li>Um painel de visualização de dados interativo</li>
         <li>
-          Anything with significant client-side interactivity and state that
-          needs to, you know, <em>work</em>
+          Qualquer coisa com interatividade client-side significativa e estado que
+          precisa funcionar de forma confiável e ser manutenível
         </li>
       </ul>
       <p>
-        ...then the &quot;bloat&quot; of a framework is the cost of doing
-        complex business, you cheap bastard. And modern tools (tree-shaking,
-        code-splitting, lazy loading) help you mitigate that cost significantly.
-        It&apos;s about choosing the right fucking tool for the right fucking
-        job, not stubbornly using a screwdriver when you need a goddamn
-        sledgehammer.
+        ...então o "custo" JavaScript inicial de um framework pode ser visto como um investimento na infraestrutura necessária para construir e gerenciar essa complexidade. Ferramentas modernas como tree-shaking, code-splitting e lazy loading ajudam significativamente a mitigar este custo. É sobre selecionar a ferramenta apropriada para a tarefa, em vez de se ater a uma ferramenta familiar quando uma mais especializada seria mais efetiva para a escala do projeto.
       </p>
       <h2 id="when">
-        SO, WHEN SHOULD I JUST FUCKING USE REACT (OR A SIMILAR FRAMEWORK), YOU
-        SLOW LEARNER?
+        ENTÃO, QUANDO PODE SER UMA BOA IDEIA USAR REACT (OU UM FRAMEWORK SIMILAR)?
       </h2>
       <ul>
         <li>
-          When your application has{" "}
-          <strong>non-trivial client-side state</strong> that needs to be
-          managed.
+          Quando sua aplicação tem estado client-side não trivial que precisa ser
+          gerenciado efetivamente.
         </li>
         <li>
-          When you need <strong>reusable UI components</strong> to build a
-          consistent and maintainable interface.
+          Quando você precisa de componentes UI reutilizáveis para construir uma
+          interface consistente, manutenível e escalável.
         </li>
         <li>
-          When you&apos;re building a <strong>Single Page Application</strong>{" "}
-          or something that <em>feels</em> like an application rather than a
-          document.
+          Quando você está desenvolvendo uma Single Page Application (SPA) ou uma
+          aplicação que visa uma experiência fluida, tipo app, em vez de uma série
+          de carregamentos de documentos.
         </li>
         <li>
-          When you&apos;re working in a <strong>team</strong> and need a shared
-          structure and patterns.
+          Quando você está trabalhando em uma equipe e precisa de estruturas,
+          padrões e vocabulário comuns.
         </li>
         <li>
-          When the <strong>complexity of the interactions</strong> would lead to
-          unmanageable spaghetti code in vanilla JS.
+          Quando a complexidade das interações do usuário provavelmente levaria a
+          "código espaguete" difícil de gerenciar se construído apenas com
+          JavaScript vanilla.
         </li>
         <li>
-          When you want to leverage a <strong>rich ecosystem</strong> of
-          battle-tested libraries and tools.
+          Quando você quer aproveitar um rico ecossistema de bibliotecas,
+          ferramentas e suporte da comunidade bem testados.
         </li>
         <li>
-          When <strong>developer velocity</strong> for complex features is more
-          critical than shaving off every last kilobyte for a mostly static
-          page.
+          Quando velocidade de desenvolvimento e a capacidade de construir
+          recursos complexos eficientemente são mais críticos que minimizar cada
+          último kilobyte para uma página largamente estática.
         </li>
       </ul>
       <h2 id="problem">
-        THE REAL FUCKING PROBLEM ISN&apos;T REACT. IT&apos;S YOU, YOU MISGUIDED
-        FOOL.
+        O VERDADEIRO DESAFIO NÃO É O FRAMEWORK EM SI, MAS COMO ESCOLHEMOS E USAMOS NOSSAS FERRAMENTAS
       </h2>
       <p>
-        It&apos;s developers using a goddamn nuclear bomb to crack a nut.
-        It&apos;s cargo-culting the latest tech without understanding why.
-        It&apos;s trying to build a simple fucking contact form with
-        microservices, Kubernetes, and a team of twenty, when a mailto link
-        would have done the job.{" "}
-        <strong>
-          It&apos;s like using a fucking military-grade flamethrower to light
-          your grandma&apos;s birthday candles - utter goddamn overkill, you
-          clueless fuck.
-        </strong>
+        O desafio frequentemente está em selecionar a ferramenta certa para o trabalho. Às vezes, uma solução mais simples é de fato a melhor. Desenvolvedores podem ocasionalmente usar uma ferramenta superdimensionada para uma tarefa simples, ou adotar novas tecnologias sem avaliar completamente sua adequação para o problema em questão. Pode ser como usar uma ferramenta industrial de alta potência para um reparo delicado em casa - talvez exagero.
       </p>
       <p>
-        But don&apos;t throw the fucking baby out with the bathwater just
-        because some idiots don&apos;t know how to use a power tool without
-        cutting their own dicks off. React and its ilk are powerful tools that
-        solve real, complex problems. The problem isn&apos;t the tool; it&apos;s
-        the idiot wielding it inappropriately.
+        No entanto, não vamos descartar ferramentas poderosas simplesmente porque podem ser mal aplicadas. React e frameworks similares são ferramentas capazes que resolvem problemas reais e complexos efetivamente. A questão geralmente não é a ferramenta em si, mas garantir que ela seja usada apropriadamente para a tarefa.
       </p>
       <p>
-        So, for your next complex, interactive, data-driven web application...
-        for the love of all that is holy, <mark>JUST FUCKING USE REACT.</mark>{" "}
-        Stop pretending like you&apos;re too pure for it, or that your
-        &quot;artisanal&quot; vanilla JS is anything other than a cry for help.
-        Your users (and your future self trying to maintain your
-        &quot;hand-crafted&quot; nightmare) will thank you.
+        Então, para sua próxima aplicação web complexa, interativa e orientada a dados, CONSIDERE USAR REACT (OU UM FRAMEWORK SIMILAR). Não é sobre pureza, mas sobre pragmatismo e escolher ferramentas que podem ajudar você e sua equipe a construir aplicações robustas e manuteníveis. Seus usuários (e seu eu futuro, encarregado de manter a base de código) provavelmente apreciarão a estrutura e capacidades que estes frameworks fornecem.
       </p>
       <p>
-        Now get back to work, and build something fucking amazing, not just
-        another HTML monument to your own stubbornness.
+        Agora, vá em frente e construa algo incrível, aproveitando as melhores ferramentas para seus desafios específicos, em vez de criar uma solução HTML que pode não escalar com suas ambições.
       </p>
       <h2 id="footer" className="sr-only">
-        FOOTER
+        RODAPÉ
       </h2>
       <p>
-        <strong>Created by:</strong>
+        <strong>Criado por:</strong>
         <br />
         <span>
           Omercan (
@@ -444,7 +263,7 @@ export default function Home() {
             href="https://github.com/obsfx"
             target="_blank"
             rel="noopener noreferrer"
-            title="View Omercan's GitHub profile"
+            title="Ver perfil do GitHub do Omercan"
           >
             GitHub
           </a>{" "}
@@ -453,7 +272,7 @@ export default function Home() {
             href="https://x.com/obsfx"
             target="_blank"
             rel="noopener noreferrer"
-            title="View Omercan's X profile"
+            title="Ver perfil do X do Omercan"
           >
             Twitter
           </a>{" "}
@@ -462,7 +281,7 @@ export default function Home() {
             href="https://bsky.app/profile/omercan.io"
             target="_blank"
             rel="noopener noreferrer"
-            title="View Omercan's Bluesky profile"
+            title="Ver perfil do Bluesky do Omercan"
           >
             Bluesky
           </a>
@@ -475,7 +294,7 @@ export default function Home() {
             href="https://github.com/burakcan"
             target="_blank"
             rel="noopener noreferrer"
-            title="View Burak's GitHub profile"
+            title="Ver perfil do GitHub do Burak"
           >
             GitHub
           </a>{" "}
@@ -484,7 +303,7 @@ export default function Home() {
             href="https://x.com/neoberg"
             target="_blank"
             rel="noopener noreferrer"
-            title="View Burak's X profile"
+            title="Ver perfil do X do Burak"
           >
             Twitter
           </a>{" "}
@@ -493,7 +312,7 @@ export default function Home() {
             href="https://bsky.app/profile/burakcan.me"
             target="_blank"
             rel="noopener noreferrer"
-            title="View Burak's Bluesky profile"
+            title="Ver perfil do Bluesky do Burak"
           >
             Bluesky
           </a>
@@ -501,12 +320,12 @@ export default function Home() {
         </span>
       </p>
       <p>
-        Inspired by{" "}
+        Inspirado por{" "}
         <a
           href="https://justfuckingusehtml.com/"
           target="_blank"
           rel="noopener noreferrer"
-          title="View justfuckingusehtml.com"
+          title="Ver justfuckingusehtml.com"
         >
           justfuckingusehtml.com
         </a>
@@ -517,9 +336,9 @@ export default function Home() {
             href="https://github.com/burakcan/just-fucking-use-react"
             target="_blank"
             rel="noopener noreferrer"
-            title="View the source code on GitHub"
+            title="Ver o código fonte no GitHub"
           >
-            View the source code on GitHub
+            Ver o código fonte no GitHub
           </a>
         </strong>
       </p>

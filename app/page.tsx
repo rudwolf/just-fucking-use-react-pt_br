@@ -52,7 +52,7 @@ export default function Home() {
         </li>
         <li>
           <a href="#bloat">
-            Mas e o "bloat"? O excesso de JavaScript? Meus usuários estão no dial-up!
+            Mas e o &quot;bloat&quot;? O excesso de JavaScript? Meus usuários estão no dial-up!
           </a>
         </li>
         <li>

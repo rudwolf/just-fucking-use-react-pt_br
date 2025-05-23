@@ -31,7 +31,7 @@ import { Label } from "@/components/ui/label";
 import { Slider } from "@/components/ui/slider";
 import { ChevronDown, ChevronUp } from "lucide-react";
 
-// Fake data generator
+// Gerador de dados simulados
 const generateDataPoint = (timestamp: number, factor = 1) => {
   const base = Math.sin(timestamp / 10) * 5 + 10;
   const random = Math.random() * 3 * factor;
@@ -48,25 +48,25 @@ const generateDataPoint = (timestamp: number, factor = 1) => {
   };
 };
 
-// Beautiful chart colors that don't suck
+// Cores do gráfico
 const CHART_COLORS = {
-  clusterfuck: "#FF6B6B", // Vibrant red
-  nightmareLatency: "#4ECDC4", // Turquoise
-  angryUsers: "#FFD166", // Warm yellow
+  clusterfuck: "#FF6B6B", // Vermelho vibrante
+  nightmareLatency: "#4ECDC4", // Turquesa
+  angryUsers: "#FFD166", // Amarelo quente
 };
 
 // Chart configuration with sarcastic labels
 const chartConfig = {
   clusterfuck: {
-    label: "Server Clusterfuck Index",
+    label: "Loucas Aventuras do Servidor",
     color: CHART_COLORS.clusterfuck,
   },
   nightmareLatency: {
-    label: "Response Time Nightmare",
+    label: "Tempo de Resposta (Paciente)",
     color: CHART_COLORS.nightmareLatency,
   },
   angryUsers: {
-    label: "Pissed-off Users",
+    label: "Usuários em Ação",
     color: CHART_COLORS.angryUsers,
   },
 };
@@ -203,7 +203,7 @@ export default function StateManagementDemo() {
             <div className="w-full lg:w-1/4 space-y-4 p-3 border rounded-md bg-background/50">
               <div className="flex items-center justify-between">
                 <Label htmlFor="running-toggle" className="font-medium">
-                  Shit Show Status
+                  Status da Festa
                 </Label>
                 <div className="flex items-center gap-2">
                   <Switch
@@ -212,14 +212,14 @@ export default function StateManagementDemo() {
                     onCheckedChange={setIsRunning}
                   />
                   <span className="text-xs">
-                    {isRunning ? "Generating Chaos" : "Blissful Pause"}
+                    {isRunning ? "Festa Rolando" : "Pausa para Café"}
                   </span>
                 </div>
               </div>
 
               <div className="space-y-2">
                 <Label htmlFor="interval-slider" className="font-medium">
-                  Clusterfuck Speed
+                  Velocidade da Dança
                 </Label>
                 <Slider
                   id="interval-slider"
@@ -236,7 +236,7 @@ export default function StateManagementDemo() {
 
               <div className="space-y-2">
                 <Label htmlFor="volatility-slider" className="font-medium">
-                  Chaos Multiplier
+                  Nível de Emoção
                 </Label>
                 <Slider
                   id="volatility-slider"
@@ -253,7 +253,7 @@ export default function StateManagementDemo() {
 
               <div className="space-y-2">
                 <Label className="font-medium">
-                  Metrics to Give a Fuck About
+                  Métricas Divertidas
                 </Label>
                 <div className="grid gap-1.5">
                   {Object.entries(chartConfig).map(([key, config]) => (
@@ -296,13 +296,13 @@ export default function StateManagementDemo() {
               </div>
 
               <div className="text-xs text-muted-foreground p-2 border rounded-md bg-amber-50 dark:bg-amber-950/20 border-amber-200 dark:border-amber-800">
-                <strong>Try this shit yourself:</strong> Toggle metrics, adjust
-                speed, inject chaos — this isn&apos;t even fucking possible with
-                plain HTML. You&apos;d need a goddamn framework. Vanilla JS
-                would be a fucking nightmare here, a recursive hellscape of DOM
-                manipulation and callback bullshit. React handles this
-                complexity so you don&apos;t lose your goddamn mind. State
-                management isn&apos;t a luxury, it&apos;s a fucking necessity.
+                <strong>Vamos brincar:</strong> Ative/desative métricas, ajuste
+                a velocidade, aumente a emoção — isso seria uma loucura com
+                HTML puro. Você precisaria de um framework legal. JavaScript
+                puro seria como dançar com os pés amarrados, com manipulação manual do DOM
+                e callbacks em cadeia. React faz essa
+                dança ficar mais suave, mantendo o código organizado. Gerenciamento de
+                estado não é só um luxo, é a coreografia da festa!
               </div>
             </div>
 
@@ -311,7 +311,7 @@ export default function StateManagementDemo() {
               {/* Area Chart */}
               <div className="border rounded-md p-3 pb-0 h-72 w-full bg-background/50">
                 <div className="text-xs font-medium mb-2 text-muted-foreground">
-                  Real-time Shitstorm Dashboard (Last 20 Data Points)
+                  Dashboard em Tempo Real (Últimos 20 Movimentos)
                 </div>
                 <ChartContainer
                   config={chartConfig}
@@ -402,7 +402,7 @@ export default function StateManagementDemo() {
               {/* Bar Chart */}
               <div className="border rounded-md p-3 pb-0 h-72 w-full bg-background/50">
                 <div className="text-xs font-medium mb-2 text-muted-foreground">
-                  Recent Dumpster Fire Metrics (Last 7 Data Points)
+                  Métricas Recentes (Últimos 7 Passos)
                 </div>
                 <ChartContainer
                   config={chartConfig}
@@ -482,7 +482,7 @@ export default function StateManagementDemo() {
                           colSpan={getVisibleMetrics().length + 1}
                           className="h-12 text-center text-muted-foreground"
                         >
-                          No data yet. Hold your damn horses.
+                          Aguardando a festa começar. Preparem-se!
                         </TableCell>
                       </TableRow>
                     ) : (
@@ -497,7 +497,7 @@ export default function StateManagementDemo() {
                             {getVisibleMetrics().map((metric) => (
                               <TableCell key={metric} className="tabular-nums">
                                 {point[metric as keyof typeof point]}
-                                {metric === "angryUsers" && " angry souls"}
+                                {metric === "angryUsers" && " dançarinos"}
                               </TableCell>
                             ))}
                           </TableRow>

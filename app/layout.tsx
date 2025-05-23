@@ -17,7 +17,7 @@ const ptSerif = PT_Serif({
   weight: ["700"],
 });
 
-const siteUrl = "https://justfuckingusereact.com";
+const siteUrl = "https://use-react-meu-amigo.vercel.app/";
 const siteTitle = "Use React, Meu Amigo";
 const siteDescription =
   "Um guia opinativo sobre por que e quando usar React (ou frameworks JavaScript similares) para desenvolvimento web moderno, especialmente para aplicações complexas e interativas. Desafia a narrativa do 'HTML puro'.";

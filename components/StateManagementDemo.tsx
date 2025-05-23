@@ -181,10 +181,10 @@ export default function StateManagementDemo() {
         >
           <span className="flex items-center gap-2 truncate">
             <span className="bg-amber-100 dark:bg-amber-800 text-amber-800 dark:text-amber-100 px-2 py-0.5 rounded-md text-xs font-semibold whitespace-nowrap">
-              SHOW THE MAGIC
+              SHOW ME THE MAGIC!
             </span>
             <span className="truncate whitespace-nowrap">
-              React State Handling Demo
+              Hora da Festa!
             </span>
           </span>
           {isExpanded ? (

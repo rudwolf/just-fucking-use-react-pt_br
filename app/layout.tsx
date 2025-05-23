@@ -54,7 +54,7 @@ export const metadata: Metadata = {
     siteName: siteTitle,
     images: [
       {
-        url: siteUrl + "/og.png",
+        url: siteUrl + "/og_pt_br.png",
         width: 1200,
         height: 630,
         alt: siteTitle,

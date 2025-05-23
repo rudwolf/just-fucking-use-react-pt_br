@@ -112,7 +112,7 @@ export default function Home() {
         Frameworks te dão jeitos mais organizados de lidar com isso. Sem eles, você vai acabar com variáveis globais espalhadas por todo lado, um código macarrônico e bugs que ninguém sabe de onde vêm.
       </p>
       <StateManagementDemo />
-      <h3 id="components">COMPONENTES: FAZ UMA VEZ, USA EM TODO LUGAR</h3>
+      <h3 id="components">COMPONENTES: CRIE UMA VEZ, USE EM TUDO!</h3>
       <p>
         Lembra daquela vez que você copiou e colou aquele HTML da barra de navegação em várias páginas? E aí quando precisou adicionar um link novo, teve que atualizar em cada lugar? Que saco, né?
       </p>
@@ -196,6 +196,14 @@ export default function Home() {
       <p>
         Frameworks, especialmente quando combinados com meta-frameworks como Next.js ou Remix, te dão ferramentas pra uma abordagem completa de performance. Isso inclui code-splitting (carregar só o JavaScript necessário), server-side rendering (SSR) ou static site generation (SSG) pra carregamentos rápidos, e navegação suave no cliente. O objetivo é construir uma aplicação que performa bem, não só uma página que carrega rápido mas não faz muita coisa.
       </p>
+      <p>
+        E não esquece do SEO! Frameworks modernos têm soluções pra otimizar seu conteúdo pra motores de busca, enquanto HTML puro pode deixar você na mão quando o assunto é SEO. É tipo ter uma casa linda, mas sem endereço - ninguém vai encontrar!
+      </p>
+      <p>
+        <p>
+          Imagina que você tá fazendo um lanche pra galera. No <strong>SSR (Server-Side Rendering)</strong>, é como se você preparasse o lanche na hora que cada pessoa chega: você monta tudo fresquinho e entrega prontinho pra ela. É isso que o código na unha que você acha &quot;lindão e simples&quot; vai ser bom, porém tem coisa melhor! Já no <strong>SSG (Static Site Generation)</strong>, é como se você já tivesse deixado os lanches prontos antes da galera chegar, tipo um estoque. Quando alguém aparece, é só pegar o lanche e entregar rapidinho. Ambos são jeitos de servir bem, mas o SSR é mais flexível pra pedidos personalizados, enquanto o SSG é mais rápido pra galera que quer o básico sem esperar.
+        </p>
+      </p>
       <h2 id="bloat">
         MAS E TODO AQUELE JAVASCRIPT EXTRA?
       </h2>
@@ -212,7 +220,10 @@ export default function Home() {
         <li>Qualquer coisa que precise de interatividade e estado que funcione direito e seja fácil de manter</li>
       </ul>
       <p>
-        ...então aquele JavaScript extra do framework é tipo um investimento na infraestrutura que você vai precisar de qualquer jeito. Ferramentas modernas como tree-shaking, code-splitting e lazy loading ajudam muito a reduzir esse custo. É sobre usar a ferramenta certa pro trabalho, não ficar preso no que você já conhece quando algo mais especializado faria mais sentido.
+        ...então aquele JavaScript extra do framework é tipo um investimento na infraestrutura que você vai precisar de qualquer jeito. Ferramentas modernas como tree-shaking (como já expliquei lá em cima), code-splitting e lazy loading (Lazy loading é uma técnica que carrega componentes ou recursos apenas quando eles são necessários, melhorando a performance da aplicação ao evitar o carregamento desnecessário de dados logo no início. É como se você já soubesse que vão pedir muitos lanches e você já deixa a chapa quente e alguns pãezinhos quentinhos só esperando a montagem!) ajudam muito a reduzir esse custo.
+      </p>
+      <p>
+        É sobre usar a ferramenta certa pro trabalho, não ficar preso no que você já conhece quando algo mais especializado faria mais sentido.
       </p>
       <h2 id="when">
         ENTÃO, QUANDO VALE A PENA USAR REACT (OU ALGO PARECIDO)?
